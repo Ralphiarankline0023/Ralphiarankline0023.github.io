@@ -3,105 +3,106 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gói AI Tháng — CapCut Pro · Sora 2 + ChatGPT Plus · Veo 3.1 Ultra</title>
-  <meta name="description" content="Mua gói AI theo tháng: CapCut Pro, Sora 2 + ChatGPT Plus, Veo 3.1 Ultra. Liên hệ Zalo/điện thoại hoặc quét QR chuyển khoản để mua nhanh." />
+  <title>Kỷ Nguyên AI Vươn Mình</title>
+  <meta name="description" content="Kỷ Nguyên AI Vươn Mình — Cung cấp gói CapCut Pro, Sora 2 + ChatGPT Plus, Veo 3.1 Ultra theo tháng. Liên hệ Zalo để kích hoạt ngay!" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {font-family:'Inter',sans-serif;background:#0b1020;color:#fff;margin:0;padding:0;text-align:center;}
-    h1 {font-size:28px;margin:20px 0;color:#8ea0ff;}
+    h1 {font-size:30px;margin:20px 0;color:#8ea0ff;}
     h2 {font-size:22px;margin:14px 0;color:#aab5ff;}
     .container {max-width:760px;margin:auto;padding:20px;}
     .card {background:#121734;border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:20px;margin-bottom:18px;text-align:left;}
     .price {font-size:20px;font-weight:700;color:#00d38f;}
     .btn {display:inline-block;background:#5b8cff;color:#fff;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:700;transition:0.2s;}
     .btn:hover {opacity:0.92;}
-    /* CTA pulse / blink */
-    .btn-cta {position:relative; box-shadow:0 0 0 0 rgba(91,140,255,0.7); animation:pulse 1.4s infinite;}
-    .btn-cta::after {content:""; position:absolute; inset:-2px; border-radius:12px; animation:blink 1s infinite; border:2px solid rgba(91,140,255,.35);}
-    @keyframes pulse {0%{transform:scale(1)} 70%{transform:scale(1.03); box-shadow:0 0 0 16px rgba(91,140,255,0)} 100%{transform:scale(1)}}
-    @keyframes blink {0%,100%{opacity:.25} 50%{opacity:.7}}
-
+    .btn-cta {position:relative;box-shadow:0 0 0 0 rgba(91,140,255,0.7);animation:pulse 1.4s infinite;}
+    .btn-cta::after {content:"";position:absolute;inset:-2px;border-radius:12px;animation:blink 1s infinite;border:2px solid rgba(91,140,255,.35);}
+    @keyframes pulse {0%{transform:scale(1)}70%{transform:scale(1.03);box-shadow:0 0 0 16px rgba(91,140,255,0)}100%{transform:scale(1)}}
+    @keyframes blink {0%,100%{opacity:.25}50%{opacity:.8}}
     .contact {background:#121734;padding:20px;border-radius:14px;margin-top:24px;text-align:left;}
     .contact a {color:#8ea0ff;text-decoration:none;}
     .contact a:hover {text-decoration:underline;}
-    .qr {display:flex; gap:14px; align-items:center;}
-    .qr img{width:130px;height:130px;border-radius:12px;border:1px solid rgba(255,255,255,.15);object-fit:cover;}
-    ul{margin:8px 0 0 18px; padding:0}
+    .qr {display:flex;gap:14px;align-items:center;}
+    .qr img{width:130px;height:130px;border-radius:12px;border:1px solid rgba(255,255,255,.15);object-fit:cover;cursor:pointer;transition:0.2s;}
+    .qr img:hover{transform:scale(1.05);}
+    ul{margin:8px 0 0 18px;padding:0}
     li{margin:4px 0}
     footer {font-size:13px;color:#b8c0ff;margin-top:30px;padding:20px;border-top:1px solid rgba(255,255,255,0.1);}
-    .center {text-align:center}
+    #qrModal {display:none;position:fixed;z-index:999;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,0.85);align-items:center;justify-content:center;}
+    #qrModal img {max-width:90%;max-height:90%;border-radius:16px;box-shadow:0 0 20px rgba(255,255,255,0.15);}
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>🧠 Gói AI Tháng</h1>
-    <p>Tập trung: bạn mua gì — liên hệ ở đâu — cách thanh toán.</p>
+    <h1>🧠 Kỷ Nguyên AI Vươn Mình</h1>
+    <p>Khởi đầu kỷ nguyên sáng tạo với các gói AI mạnh mẽ — Dễ dùng, hiệu quả, giá tốt nhất thị trường.</p>
 
-    <!-- CapCut Pro -->
     <div class="card">
       <h2>🎬 CapCut Pro</h2>
       <p>Dựng video nhanh, template xu hướng, phụ đề tự động, xuất 4K không watermark.</p>
       <ul>
-        <li>✨ <strong>Magic Cut</strong> & Auto Captions Pro tăng tốc 2–3 lần.</li>
-        <li>🗂️ Kho <strong>template TikTok/Shorts</strong> cập nhật mỗi tuần.</li>
+        <li>✨ <strong>Magic Cut</strong> & Auto Captions Pro giúp dựng video nhanh hơn 3 lần.</li>
+        <li>🎨 Hơn 10.000 <strong>template TikTok/Shorts</strong> mới mỗi tuần.</li>
       </ul>
-      <div class="price">199.000₫ / tháng</div>
-      <p><strong>Ví dụ prompt:</strong> “Video quảng cáo 15s cho shop thời trang nữ, 3 cảnh, nhạc trendy, CTA ‘Xem ngay’.”</p>
+      <div class="price">29.000₫ / tháng</div>
+      <p><strong>Ví dụ prompt:</strong> “Video 15s cho shop thời trang nữ, 3 cảnh, nhạc trending, CTA ‘Xem ngay’.”</p>
       <a href="#lien-he" class="btn btn-cta">Mua CapCut Pro</a>
     </div>
 
-    <!-- Sora 2 + ChatGPT Plus -->
     <div class="card">
       <h2>🎥 Sora 2 + ChatGPT Plus</h2>
-      <p>Tạo video AI từ mô tả; ChatGPT viết kịch bản, tagline, caption & lịch đăng.</p>
+      <p>Tạo video AI từ mô tả, viết kịch bản, tagline, caption, và lịch đăng tự động.</p>
       <ul>
-        <li>🎞️ <strong>Storyboard tự động</strong> (khung hình + chuyển cảnh) để dựng nhanh.</li>
-        <li>🎙️ Gợi ý <strong>voiceover & nhạc nền</strong> phù hợp mood.</li>
+        <li>🎞️ <strong>Storyboard AI</strong>: tự động phân cảnh, chuyển động và ánh sáng.</li>
+        <li>🎙️ Gợi ý <strong>voice & nhạc nền</strong> phù hợp chủ đề.</li>
       </ul>
-      <div class="price">399.000₫ / tháng</div>
-      <p><strong>Ví dụ prompt Sora:</strong> “Teaser 12s cho thương hiệu cà phê, 4 cảnh cinematic, tagline ‘Đánh thức ý tưởng’.”</p>
+      <div class="price">99.000₫ / tháng</div>
+      <p><strong>Ví dụ prompt:</strong> “Teaser 12s cho thương hiệu cà phê, 4 cảnh cinematic, tagline ‘Đánh thức ý tưởng’.”</p>
       <a href="#lien-he" class="btn btn-cta">Mua Sora 2 + ChatGPT Plus</a>
     </div>
 
-    <!-- Veo 3.1 Ultra -->
     <div class="card">
       <h2>💡 Veo 3.1 Ultra</h2>
-      <p>Trợ lý AI marketing cao cấp: viết bài bán hàng, chiến lược, email/DM chăm sóc.</p>
+      <p>Trợ lý AI marketing cao cấp: viết bài bán hàng, tạo video bằng Veo, email & chiến dịch tự động.</p>
       <ul>
-        <li>🎬 <strong>Tạo video bằng Veo</strong>; hỗ trợ <strong>Veo 3.1 Fast</strong> với <strong>lượt tạo nhanh không giới hạn*</strong>.</li>
-        <li>📈 Gợi ý <strong>phễu chuyển đổi</strong> & USP theo ngành, tăng tỉ lệ chốt.</li>
+        <li>🎬 <strong>Tạo video Veo 3.1 Fast</strong> — không giới hạn lượt tạo, tốc độ cao.</li>
+        <li>🚀 Gợi ý <strong>phễu chuyển đổi, USP</strong> & chiến dịch tối ưu doanh thu.</li>
       </ul>
-      <div class="price">499.000₫ / tháng</div>
-      <p><strong>Ví dụ prompt:</strong> “Landing page serum C-vitamin: 1 headline ≤12 từ, 3 lợi ích, 2 ưu đãi, CTA rõ ràng.”</p>
+      <div class="price">99.000₫ / tháng</div>
+      <p><strong>Ví dụ prompt:</strong> “Landing page serum C-vitamin: tiêu đề ≤12 từ, 3 lợi ích, CTA rõ ràng.”</p>
       <a href="#lien-he" class="btn btn-cta">Mua Veo 3.1 Ultra</a>
-      <p class="center" style="font-size:12px;opacity:.8;margin-top:6px">* Phạm vi theo chính sách gói thực tế.</p>
     </div>
 
-    <!-- LIÊN HỆ & QR -->
     <div id="lien-he" class="contact">
       <h2>📲 Liên hệ & Thanh toán nhanh</h2>
       <div class="qr">
-        <img src="qr-chuyenkhoan.png" alt="QR chuyển khoản" />
+        <img id="qrImg" src="qr-chuyenkhoan.png" alt="QR chuyển khoản" title="Nhấn để phóng to" />
         <div>
-          <p>Zalo: <a href="https://zalo.me/YOUR_ZALO_ID">https://zalo.me/YOUR_ZALO_ID</a></p>
-          <p>Điện thoại: <a href="tel:0900000000">0900 000 000</a></p>
+          <p>Zalo: <a href="https://zalo.me/0964451836">https://zalo.me/0964451836</a></p>
+          <p>Điện thoại: <a href="tel:0964451836">0964 451 836</a></p>
           <p>Chuyển khoản:<br>
-             Ngân hàng <strong>Vietcombank</strong> – STK <strong>0123456789</strong><br>
-             Chủ TK: <strong>NGUYEN VAN A</strong><br>
-             Nội dung: <strong>AI - SĐT - GÓI</strong></p>
-          <p><a href="https://zalo.me/YOUR_ZALO_ID" class="btn btn-cta">Liên hệ ngay</a></p>
-          <p class="center" style="font-size:12px;opacity:.85;margin:8px 0 0">👉 Đặt file <code>qr-chuyenkhoan.png</code> cùng thư mục <code>index.html</code> để hiển thị QR.</p>
+             Ngân hàng <strong>Viettinbank</strong> – STK <strong>108883051730</strong><br>
+             Chủ TK: <strong>NGUYEN DUC THINH</strong><br>
+             Nội dung: <strong>AI - SĐT ZALO - GÓI</strong></p>
+          <p><a href="https://zalo.me/0964451836" class="btn btn-cta">Liên hệ ngay</a></p>
         </div>
       </div>
     </div>
 
     <footer>
-      © <span id="year"></span> Gói AI Tháng — CapCut Pro · Sora 2 + ChatGPT Plus · Veo 3.1 Ultra. Mọi quyền được bảo lưu.
+      © 2025 Kỷ Nguyên AI Vươn Mình. Mọi quyền được bảo lưu.
     </footer>
   </div>
 
+  <div id="qrModal" class="closeable">
+    <img src="qr-chuyenkhoan.png" alt="QR phóng to" />
+  </div>
+
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    const qrImg = document.getElementById('qrImg');
+    const modal = document.getElementById('qrModal');
+    qrImg.onclick = () => { modal.style.display = 'flex'; };
+    modal.onclick = () => { modal.style.display = 'none'; };
   </script>
 </body>
 </html>
