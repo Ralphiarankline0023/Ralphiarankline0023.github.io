@@ -1,11 +1,388 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>Ralphia Frankline</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gói AI tháng — CapCut Pro · Sora 2 + ChatGPT Plus · Veo 3.1 Ultra</title>
+  <meta name="description" content="Bán các gói AI theo tháng: CapCut Pro, Sora 2 + ChatGPT Plus, Veo 3.1 Ultra. Giới thiệu tính năng rõ ràng và prompt minh hoạ. Hỗ trợ Zalo & điện thoại." />
+  <meta name="robots" content="index,follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta property="og:title" content="Gói AI tháng — CapCut Pro · Sora 2 + ChatGPT Plus · Veo 3.1 Ultra" />
+  <meta property="og:description" content="Bán gói CapCut Pro, Sora 2 + ChatGPT Plus, Veo 3.1 Ultra theo tháng. Kèm prompt minh hoạ thực chiến." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="" />
+  <style>
+    :root{
+      --bg: #0b1020;
+      --card: #121734;
+      --muted: #8ea0ff;
+      --accent: #5b8cff;
+      --text: #e8ecff;
+      --sub: #b8c0ff;
+      --ok: #00d38f;
+      --warn: #ffd166;
+      --danger: #ff6b6b;
+      --ring: 0 0 0 8px rgba(91, 140, 255, 0.12);
+    }
+    *{box-sizing:border-box}
+    html, body{margin:0; padding:0; font-family:'Inter', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial; color:var(--text); background: radial-gradient(1200px 600px at 10% -10%, #162055 0%, #0b1020 40%, #0b1020 100%) fixed;}
+    a{color:var(--muted); text-decoration:none}
+    a:hover{color:#fff}
+    .container{max-width:1100px; margin:0 auto; padding:0 20px}
+    header{position:sticky; top:0; backdrop-filter:saturate(180%) blur(8px); background:rgba(11,16,32,.6); border-bottom:1px solid rgba(255,255,255,.06); z-index:10}
+    nav{display:flex; align-items:center; justify-content:space-between; height:64px}
+    .brand{display:flex; align-items:center; gap:12px; font-weight:700; letter-spacing:.3px}
+    .logo{width:32px; height:32px; border-radius:10px; background: conic-gradient(from 180deg at 50% 50%, #5b8cff 0deg, #00d38f 120deg, #8ea0ff 240deg, #5b8cff 360deg); box-shadow:0 8px 30px rgba(91,140,255,.35)}
+    .nav-cta{display:flex; gap:10px}
+    .btn{display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:12px 16px; border-radius:12px; border:1px solid rgba(255,255,255,.08); background:#0f1630; color:#fff; font-weight:600; transition:all .2s ease;}
+    .btn:hover{transform:translateY(-1px); box-shadow:0 8px 24px rgba(91,140,255,.25)}
+    .btn.accent{background:linear-gradient(135deg, #5b8cff, #7aa2ff); border-color:transparent}
+    .btn.ghost{background:transparent}
+
+    .hero{padding:80px 0 30px}
+    .grid{display:grid; gap:18px}
+    @media(min-width: 900px){
+      .grid-2{grid-template-columns:1.2fr .8fr}
+      .grid-3{grid-template-columns: repeat(3, 1fr)}
+    }
+    .title{font-size: clamp(28px, 3.2vw, 48px); line-height:1.05; margin:0 0 14px; letter-spacing:-.02em}
+    .sub{font-size: clamp(15px, 1.5vw, 18px); color:var(--sub); margin:0 0 20px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.07); border-radius:16px; padding:18px}
+    .badge{display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border:1px dashed rgba(255,255,255,.18); border-radius:999px; color:var(--muted); font-weight:600; letter-spacing:.3px}
+    .list{display:grid; gap:10px; margin:14px 0}
+    .li{display:flex; gap:10px; align-items:flex-start}
+    .dot{width:8px; height:8px; border-radius:999px; background:var(--ok); margin-top:9px; box-shadow:0 0 0 6px rgba(0,211,143,.12)}
+
+    .section{padding:36px 0}
+    .section h2{font-size: clamp(22px, 2.6vw, 32px); margin:0 0 12px}
+    .muted{color:var(--sub)}
+
+    .pricing{display:grid; gap:18px}
+    @media(min-width: 800px){.pricing{grid-template-columns: repeat(3, 1fr)}}
+    .price-card{position:relative; overflow:hidden}
+    .price{font-size:32px; font-weight:800; margin:10px 0}
+    .save{position:absolute; top:12px; right:-16px; background:var(--warn); color:#10121f; padding:6px 16px; font-weight:800; transform:rotate(12deg)}
+
+    .faq details{background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); border-radius:12px; padding:12px 14px}
+    .faq summary{cursor:pointer; font-weight:700}
+
+    .contact{display:grid; gap:18px}
+    @media(min-width: 800px){.contact{grid-template-columns:1fr 1fr}}
+    .kbd{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; background:#0a0f24; border:1px solid rgba(255,255,255,.12); padding:10px 12px; border-radius:12px}
+
+    footer{padding:24px 0; border-top:1px solid rgba(255,255,255,.06); color:var(--sub)}
+    .note{font-size:12px; opacity:.85}
+
+    /* nice focus */
+    .focusable:focus{outline:none; box-shadow:var(--ring)}
+  </style>
 </head>
 <body>
-  <h1>Xin chào, mình là Ralphia Frankline!</h1>
-  <p>Chào mừng các bạn đến với trang web của mình 🎉</p>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <div class="logo" aria-hidden="true"></div>
+          <span>Veo3 <span style="opacity:.7">GPT</span></span>
+        </div>
+        <div class="nav-cta">
+          <a href="#mua" class="btn accent">Mua ngay</a>
+          <a href="#lien-he" class="btn ghost">Liên hệ</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container grid grid-2">
+        <div class="card">
+          <div class="badge">🧰 Bộ công cụ AI theo tháng</div>
+          <h1 class="title">CapCut Pro · Sora 2 + ChatGPT Plus · Veo 3.1 Ultra — Bộ công cụ AI cho sáng tạo & bán hàng</h1>
+          <p class="sub">Cung cấp các gói AI bản quyền theo tháng: dựng video nhanh với CapCut Pro, tạo video AI bằng Sora 2, và lên nội dung/bán hàng với ChatGPT Plus & Veo 3.1 Ultra. Có ví dụ prompt để bạn áp dụng ngay.</p>
+          <div class="list">
+            <div class="li"><span class="dot"></span><div>Tạo nội dung đa kênh (Facebook, TikTok, Zalo OA, Shopee, Website) chỉ với 1 brief</div></div>
+            <div class="li"><span class="dot" style="background:var(--muted)"></span><div>Gợi ý tiêu đề, CTA, hashtag và lịch đăng</div></div>
+            <div class="li"><span class="dot" style="background:var(--warn)"></span><div>Template bán hàng tối ưu chuyển đổi theo ngành</div></div>
+          </div>
+          <div class="nav-cta">
+            <a href="#mua" class="btn accent">Mua bản quyền</a>
+            <a href="#demo" class="btn">Xem demo</a>
+          </div>
+          <p class="note" style="margin-top:10px">* Giá mở bán số lượng có hạn. Liên hệ Zalo để nhận ưu đãi.</p>
+        </div>
+        <div class="card" aria-label="Ảnh minh họa">
+          <img alt="Mockup Veo3 GPT" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1400&auto=format&fit=crop" style="width:100%; border-radius:12px; object-fit:cover; aspect-ratio: 16/10;"/>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:10px">
+            <div class="kbd">⏱️ Triển khai: &lt; 5 phút</div>
+            <div class="kbd">🔒 Bảo mật dữ liệu</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TÍNH NĂNG -->
+    <section class="section" id="tinh-nang">
+      <div class="container">
+        <h2>✨ Tính năng nổi bật</h2>
+        <p class="muted">Tập trung vào 3 nhóm chính: tạo nội dung, tối ưu chuyển đổi, và tự động hóa.</p>
+        <div class="grid grid-3" style="margin-top:14px">
+          <div class="card">
+            <h3>Content Studio</h3>
+            <p class="muted">Hơn 50 prompt mẫu: post bán hàng, video hook, email chào mừng, chăm sóc khách.</p>
+          </div>
+          <div class="card">
+            <h3>Conversion Boost</h3>
+            <p class="muted">Khuyến nghị CTA, A/B tiêu đề, phân tích ý định khách hàng theo ngữ cảnh.</p>
+          </div>
+          <div class="card">
+            <h3>Automation</h3>
+            <p class="muted">Xuất lịch nội dung, gợi ý thời gian đăng, checklist triển khai đa kênh.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GIÁ -->
+    <section class="section" id="mua">
+      <div class="container">
+        <h2>💳 Gói dịch vụ & Giá theo tháng</h2>
+        <div class="pricing" style="margin-top:14px">
+          <!-- CapCut Pro -->
+          <div class="card price-card">
+            <h3>CapCut Pro (tháng)</h3>
+            <p class="muted">Dựng video nhanh, kho hiệu ứng & template, xóa phông, auto caption.</p>
+            <div class="price">Liên hệ</div>
+            <ul class="list">
+              <li class="li"><span class="dot"></span><span>Kho template xu hướng TikTok/Shorts</span></li>
+              <li class="li"><span class="dot"></span><span>Auto Subtitle, dịch phụ đề, tách tiếng ồn</span></li>
+              <li class="li"><span class="dot"></span><span>Xuất video 4K, không watermark</span></li>
+            </ul>
+            <details class="kbd" style="margin-top:8px">
+              <summary><strong>Prompt minh hoạ (CapCut + nội dung)</strong></summary>
+<pre style="white-space:pre-wrap; margin:8px 0 0">Bối cảnh: Shop thời trang nữ, video 15–20s cho TikTok.
+Yêu cầu: 3 hook đầu video, 5 caption ngắn & 10 hashtag.
+Giọng điệu: Vui tươi, khẩn trương, kêu gọi xem full look.
+Đầu ra:
+- Script 3 cảnh quay (mỗi cảnh ≤ 6s) kèm gợi ý template CapCut.
+- Call-to-Action mạnh ở 3s cuối.
+</pre>
+            </details>
+            <a href="#lien-he" class="btn accent focusable" style="margin-top:10px">Liên hệ mua</a>
+          </div>
+          <!-- Sora 2 + ChatGPT Plus -->
+          <div class="card price-card" style="border-color:rgba(91,140,255,.5); box-shadow:0 0 0 1px rgba(91,140,255,.25)">
+            <h3>Sora 2 + ChatGPT Plus (tháng)</h3>
+            <p class="muted">Tạo video AI từ mô tả, viết kịch bản, tối ưu ý tưởng và lồng tiếng.</p>
+            <div class="price">Liên hệ</div>
+            <ul class="list">
+              <li class="li"><span class="dot"></span><span>Kịch bản tự động theo chân dung khách hàng</span></li>
+              <li class="li"><span class="dot"></span><span>Storyboard khung hình & chỉ dẫn quay/AI scene</span></li>
+              <li class="li"><span class="dot"></span><span>Gợi ý voiceover, nhạc nền & hiệu ứng</span></li>
+            </ul>
+            <details class="kbd" style="margin-top:8px">
+              <summary><strong>Prompt minh hoạ (Sora 2)</strong></summary>
+<pre style="white-space:pre-wrap; margin:8px 0 0">Create a 12-second product teaser for a coffee brand.
+Style: cinematic macro, soft natural light, shallow depth of field.
+Beats (4 scenes, 3s each):
+1) water pours over coffee beans;
+2) steam rises from cup; 
+3) close-up latte art forming brand initial; 
+4) hero shot with tagline overlay: "Wake Ideas".
+Include camera moves & timing.
+</pre>
+            </details>
+            <details class="kbd" style="margin-top:8px">
+              <summary><strong>Prompt minh hoạ (ChatGPT Plus)</strong></summary>
+<pre style="white-space:pre-wrap; margin:8px 0 0">Bạn là Creative Planner. Dựa theo teaser coffee 12s ở trên, viết:
+- 3 tagline tiếng Việt (≤ 6 từ)
+- 1 caption ngắn (≤ 60 ký tự)
+- Lịch đăng cho TikTok/IG trong 7 ngày (mỗi ngày 1 ý tưởng)
+Giọng điệu: tinh gọn, hiện đại.
+</pre>
+            </details>
+            <a href="#lien-he" class="btn accent focusable" style="margin-top:10px">Liên hệ mua</a>
+          </div>
+          <!-- Veo 3.1 Ultra -->
+          <div class="card price-card">
+            <h3>Veo 3.1 Ultra (tháng)</h3>
+            <p class="muted">Trợ lý AI cao cấp cho marketing & bán hàng, phân tích ngữ cảnh sâu.</p>
+            <div class="price">Liên hệ</div>
+            <ul class="list">
+              <li class="li"><span class="dot"></span><span>Soạn content đa kênh từ 1 brief</span></li>
+              <li class="li"><span class="dot"></span><span>Phân tích đối thủ & đề xuất USP</span></li>
+              <li class="li"><span class="dot"></span><span>Sinh phễu chuyển đổi, email/DM chăm sóc</span></li>
+            </ul>
+            <details class="kbd" style="margin-top:8px">
+              <summary><strong>Prompt minh hoạ (Veo 3.1 Ultra)</strong></summary>
+<pre style="white-space:pre-wrap; margin:8px 0 0">Bối cảnh: Shop mỹ phẩm serum C-vitamin.
+Mục tiêu: Tăng chuyển đổi landing page.
+Nhiệm vụ:
+1) Viết hero headline (≤ 12 từ) + 3 key benefit bullet.
+2) Đề xuất 2 gói ưu đãi cho khách mới.
+3) Soạn 1 email chăm sóc sau mua (150–180 từ).
+Định dạng: Markdown, có CTA.
+</pre>
+            </details>
+            <a href="#lien-he" class="btn accent focusable" style="margin-top:10px">Liên hệ mua</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEMO -->
+    <section class="section" id="demo">
+      <div class="container grid contact">
+    <section class="section" id="demo">
+      <div class="container grid contact">
+        <div class="card">
+          <h2>🎬 Xem demo nhanh</h2>
+          <p class="muted">Video demo (chèn link YouTube hoặc Google Drive của bạn):</p>
+          <div class="kbd" style="display:flex; align-items:center; justify-content:space-between; gap:10px">
+            <span id="demoLink">https://youtu.be/your-demo</span>
+            <button class="btn" onclick="copyText('demoLink')">Copy</button>
+          </div>
+        </div>
+        <div class="card">
+          <h2>📦 Tải tài liệu</h2>
+          <p class="muted">Brochure PDF/Case study (đặt link của bạn):</p>
+          <div class="kbd" style="display:flex; align-items:center; justify-content:space-between; gap:10px">
+            <span id="brochure">https://your-site.com/veo3gpt-brochure.pdf</span>
+            <button class="btn" onclick="copyText('brochure')">Copy</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIÊN HỆ & THANH TOÁN -->
+    <section class="section" id="lien-he">
+      <div class="container">
+        <h2>📲 Liên hệ & Thanh toán</h2>
+        <div class="contact" style="margin-top:14px">
+          <div class="card">
+            <h3>Liên hệ trực tiếp</h3>
+            <div class="list">
+              <div class="li">
+                <span class="dot"></span>
+                <div>
+                  Zalo: <a id="zaloLink" href="https://zalo.me/0964451836" target="_blank" rel="noopener">https://zalo.me/0964451836</a>
+                  <div class="note">Đổi 0964451836 thành ID/đường dẫn Zalo của bạn</div>
+                </div>
+                <button class="btn" onclick="copyHref('zaloLink')">Copy</button>
+              </div>
+              <div class="li">
+                <span class="dot" style="background:var(--muted)"></span>
+                <div>Điện thoại: <a id="phoneLink" href="tel:0900000000">0900 000 000</a></div>
+                <button class="btn" onclick="copyText('phoneLink')">Copy</button>
+              </div>
+              <div class="li">
+                <span class="dot" style="background:var(--warn)"></span>
+                <div>Email: <a id="emailLink" href="mailto:you@example.com">you@example.com</a></div>
+                <button class="btn" onclick="copyText('emailLink')">Copy</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Thông tin chuyển khoản (STK)</h3>
+            <div class="list">
+              <div class="li">
+                <span class="dot"></span>
+                <div>Ngân hàng: <strong id="bankName">Viettinbank</strong></div>
+                <button class="btn" onclick="copyText('bankName')">Copy</button>
+              </div>
+              <div class="li">
+                <span class="dot" style="background:var(--muted)"></span>
+                <div>Chủ tài khoản: <strong id="accName">NGUYEN DUC THINH</strong></div>
+                <button class="btn" onclick="copyText('accName')">Copy</button>
+              </div>
+              <div class="li">
+                <span class="dot" style="background:var(--warn)"></span>
+                <div>Số tài khoản (STK): <strong id="accNo">108883051730</strong></div>
+                <button class="btn" onclick="copyText('accNo')">Copy</button>
+              </div>
+              <div class="li">
+                <span class="dot" style="background:var(--ok)"></span>
+                <div>Nội dung chuyển khoản: <strong id="memo">SĐT ZALO - GÓI</strong></div>
+                <button class="btn" onclick="copyText('memo')">Copy</button>
+              </div>
+            </div>
+            <a href="#mua" class="btn accent" style="margin-top:6px">Xác nhận đã chuyển khoản</a>
+            <p class="note" style="margin-top:8px">* Vui lòng giữ hóa đơn. Hỗ trợ kích hoạt trong giờ làm việc.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq">
+      <div class="container">
+        <h2>❓ Câu hỏi thường gặp</h2>
+        <div class="grid" style="gap:12px; margin-top:10px">
+          <details>
+            <summary>Veo3 GPT dùng cho những ai?</summary>
+            <p class="muted">Người làm marketing, chủ shop, creator nội dung, và doanh nghiệp muốn tăng hiệu suất tạo nội dung & bán hàng.</p>
+          </details>
+          <details>
+            <summary>Phí duy trì và nâng cấp thế nào?</summary>
+            <p class="muted">Gói Starter/Pro theo tháng; có thể nâng cấp bất kỳ lúc nào, tính phí theo phần chênh lệch.</p>
+          </details>
+          <details>
+            <summary>Hỗ trợ khách hàng ở đâu?</summary>
+            <p class="muted">Ưu tiên qua Zalo. Gói Pro/Business có kênh hỗ trợ riêng và SLA phản hồi nhanh.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap">
+      <div>© <span id="year"></span> Veo3 GPT. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    const y = document.getElementById('year'); y.textContent = new Date().getFullYear();
+    function copyText(id){
+      const el = document.getElementById(id);
+      const text = el?.innerText || el?.textContent || '';
+      navigator.clipboard.writeText(text).then(()=>{
+        toast('Đã copy: ' + text);
+      });
+    }
+    function copyHref(id){
+      const el = document.getElementById(id);
+      const text = el?.href || '';
+      navigator.clipboard.writeText(text).then(()=> toast('Đã copy: ' + text));
+    }
+    function toast(msg){
+      const t = document.createElement('div');
+      t.textContent = msg; t.setAttribute('role','status');
+      t.style.position='fixed'; t.style.bottom='18px'; t.style.right='18px';
+      t.style.background='rgba(16,22,48,.9)'; t.style.border='1px solid rgba(255,255,255,.18)'; t.style.padding='12px 14px'; t.style.borderRadius='12px'; t.style.color='#e8ecff'; t.style.zIndex='99';
+      document.body.appendChild(t);
+      setTimeout(()=> t.remove(), 1800);
+    }
+  </script>
+
+  <!-- Schema.org Product -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Gói AI theo tháng",
+    "description": "CapCut Pro, Sora 2 + ChatGPT Plus, Veo 3.1 Ultra.",
+    "brand": {"@type": "Brand", "name": "AI Suite"},
+    "isAccessoryOrSparePartFor": [
+      {"@type": "Product", "name": "CapCut Pro (Monthly)"},
+      {"@type": "Product", "name": "Sora 2 + ChatGPT Plus (Monthly)"},
+      {"@type": "Product", "name": "Veo 3.1 Ultra (Monthly)"}
+    ]
+  }
+  </script>
 </body>
 </html>
